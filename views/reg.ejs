@@ -1,0 +1,48 @@
+<% layout('layouts/main.ejs') %>
+
+<form class="form-horizontal" role="form">
+    <div class="form-group">
+        <label for="login" class="control-label col-sm-1">Логін :</label>
+        <div class="col-sm-4">
+            <input name="login" type="text" id="login" class="form-control" maxlength="40" required pattern="^[a-zA-Z0-9]+$">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="password" class="control-label col-sm-1">Пароль :</label>
+        <div class="col-sm-4">
+            <input name="password" type="password" id="password" class="form-control" maxlength="100" required pattern="^[a-zA-Z0-9А-Яа-яЁё]+$">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="userName" class="control-label col-sm-1">Ім'я :</label>
+        <div class="col-sm-4">
+            <input name="name" type="text" id="userName" class="form-control" maxlength="40" required pattern="^[a-zA-ZА-Яа-яЁё]+$">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="userSurName" class="control-label col-sm-1">Прізвище :</label>
+        <div class="col-sm-4">
+            <input name="surname" type="text" id="userSurName" class="form-control" maxlength="70" required pattern="^[a-zA-ZА-Яа-яЁё]+$">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="phone" class="control-label col-sm-1">Телефон :</label>
+        <div class="col-sm-4">
+            <input name="telephone" type="tel" id="phone" class="form-control" maxlength="13" required pattern="[0-9]{10,}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="email" class="control-label col-sm-1">E-mail :</label>
+        <div class="col-sm-4">
+            <input name="email" type="email" id="email" class="form-control" maxlength="100" required>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-offset-1 col-sm-11">
+            <button type="submit" class="btn btn-default">Реєстрація</button>
+            <span class="help-block"></span>
+        </div>
+    </div>
+</form>
+
+<script src="js/reg-page.js"></script>

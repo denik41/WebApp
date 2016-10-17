@@ -1,0 +1,23 @@
+<%layout('layouts/main.ejs')%>
+<form class="form-horizontal" role="form">
+    <div class="form-group">
+        <label for="login" class="control-label col-sm-1">Логін: </label>
+        <div class="col-sm-2">
+            <input type="text" id="login" name="login" class="form-control" maxlength="40" required pattern="^[a-zA-Z0-9]+$">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="password" class="control-label col-sm-1">Пароль: </label>
+        <div class="col-sm-2">
+            <input type="password" id="password" name="password" class="form-control" maxlength="100" required pattern="^[a-zA-Z0-9А-Яа-яЁё]+$">
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-offset-1 col-sm-11">
+            <button class="btn btn-default" type="submit">Вхід</button>
+            <span class="help-block"></span>
+        </div>
+    </div>
+</form>
+
+<script src="js/login-page.js"></script>

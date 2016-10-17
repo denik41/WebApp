@@ -1,0 +1,15 @@
+body {
+    background-image: url("../images/background.jpg")
+}
+
+.navbar-nav a {
+    border-bottom: solid #F08F85 2px;
+    margin-right: 5px;
+    -webkit-transition: all ease 0.8s;
+    -moz-transition: all ease 0.8s;
+    transition: all ease 0.8s;
+}
+
+.navbar-nav a:hover {
+    box-shadow: inset 0 -100px 0 0 #F08F85;
+}

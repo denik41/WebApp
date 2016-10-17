@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css\style.css">
+    <link rel="stylesheet" href="libs\bower_components\bootstrap\dist\css\bootstrap.css">
+    <script src="libs\bower_components\jquery\dist\jquery.js"></script>
+    <script src="libs\bower_components\bootstrap\dist\js\bootstrap.js"></script>
+    <title>Title</title>
+</head>
+<body>
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="header">
+            <a href="/" class="navbar-brand">
+                <span>FastBet</span>
+            </a>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+            <% if(!user) { %>
+            <li><a href="/reg">Реєстрація</a></li>
+            <li><a href="/login">Ввійти</a></li>
+            <% } else { %>
+            <li><a href="" id="profile">Профіль</a></li>
+            <li><a href="" id="logout">Вийти</a></li>
+            <% } %>
+        </ul>
+    </div>
+</nav>
+
+<div class="container-fluid">
+    <%- body %>
+</div>
+
+<script src="../../public/js/main-layout.js"></script>
+</body>
+</html>
